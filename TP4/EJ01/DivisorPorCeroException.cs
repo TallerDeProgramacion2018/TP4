@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TP4
+namespace EJ01
 {
-    class Program
+    public class DivisorPorCeroException : Exception
     {
-        static void Main(string[] args)
+        public DivisorPorCeroException()
         {
+
         }
     }
 }
