@@ -9,7 +9,7 @@ namespace EJ01
     class Matematica
     {
 
-        public double Dividir(int pDividendo, int pDivisor)
+        static public double Dividir(int pDividendo, int pDivisor)
         {
             if (pDivisor == 0)
             {

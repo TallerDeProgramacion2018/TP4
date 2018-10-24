@@ -8,12 +8,9 @@ namespace EJ01
 {
     class ControladorFachada
     {
-        private Matematica matematica = new Matematica();
-
         public double Dividir(int pDividendo, int pDivisor)
         {
-           return matematica.Dividir(pDividendo, pDivisor);
+           return Matematica.Dividir(pDividendo, pDivisor);
         }
-
     }
 }
