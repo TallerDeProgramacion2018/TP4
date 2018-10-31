@@ -12,7 +12,6 @@ namespace EJ03
         private string iNombreCompleto;
         private string iCorreoElectronico;
 
-
         public string Codigo
         {
             get { return iCodigo; }
