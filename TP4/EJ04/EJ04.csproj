@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{979E5BD4-3D83-43B9-99D8-8ED87A4194F5}</ProjectGuid>
+    <ProjectGuid>{2043D307-5FEC-4095-982C-21D1228C27EF}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>EJ03</RootNamespace>
-    <AssemblyName>EJ03</AssemblyName>
+    <RootNamespace>EJ04</RootNamespace>
+    <AssemblyName>EJ04</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -49,6 +49,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RepositorioUsuarios.cs" />
     <Compile Include="Usuario.cs" />
+    <Compile Include="UsuarioClave.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

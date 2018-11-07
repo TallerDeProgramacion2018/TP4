@@ -4,26 +4,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EJ03
+namespace EJ04
 {
     public class RepositorioUsuarios : iRepositorioUsuarios
     {
-        readonly Dictionary<string, Usuario> iDiccionario = new Dictionary<string, Usuario>();
+        private IList<Usuario> iLista = new List<Usuario>();
 
-        public Dictionary<string, Usuario> Diccionario
+        public IList<Usuario> Lista
         {
-            get { return iDiccionario;  }
+            get { return iLista; }
         }
 
         public void Actualizar(Usuario pUsuario)
         {
-            iDiccionario.Remove(pUsuario.Codigo);
-            iDiccionario.Add(pUsuario.Codigo, pUsuario);
+            foreach(Usuario usuario in iLista)
+            {
+                if (usuario.Codigo == pUsuario.Codigo)
+                    iLista.Remove(usuario);
+            }
+
+            iLista.Add(pUsuario);
         }
 
         public void Agregar(Usuario pUsuario)
         {
-            iDiccionario.Add(pUsuario.Codigo, pUsuario);
+            iLista.Add(pUsuario);
         }
 
         public int Compare(Usuario pPrimerUsuario, Usuario pSegundoUsuario)
@@ -33,14 +38,17 @@ namespace EJ03
 
         public void Eliminar(string pCodigo)
         {
-            if (iDiccionario.ContainsKey(pCodigo))
-                iDiccionario.Remove(pCodigo);
+            foreach (Usuario usuario in iLista)
+            {
+                if (usuario.Codigo == pCodigo)
+                    iLista.Remove(usuario);
+            }
         }
 
         public IList<Usuario> ObtenerOrdenadosPor(IComparer<Usuario> pComparador)
         {
-            List<Usuario> lista = iDiccionario.Values.ToList();
-            for (int i = 0; i < lista.Count-1; i++)
+            IList<Usuario> lista = iLista;
+            for (int i = 0; i < lista.Count - 1; i++)
             {
                 if (pComparador.Compare(lista[i], lista[i + 1]) == 1)
                 {
@@ -54,7 +62,11 @@ namespace EJ03
 
         public Usuario ObtenerPorCodigo(string pCodigo)
         {
-            return iDiccionario[pCodigo];
+            foreach (Usuario usuario in iLista)
+            {
+                if (usuario.Codigo == pCodigo)
+                    return usuario;
+            }
         }
 
         public IList<Usuario> ObtenerTodos()

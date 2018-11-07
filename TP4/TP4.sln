@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EJ02", "EJ02\EJ02.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EJ03", "EJ03\EJ03.csproj", "{979E5BD4-3D83-43B9-99D8-8ED87A4194F5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestRepositorioUsuarios", "TestRepositorioUsuarios\TestRepositorioUsuarios.csproj", "{E54A4AAB-7512-4D85-9AE0-F621F13EEBDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EJ04", "EJ04\EJ04.csproj", "{2043D307-5FEC-4095-982C-21D1228C27EF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{979E5BD4-3D83-43B9-99D8-8ED87A4194F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{979E5BD4-3D83-43B9-99D8-8ED87A4194F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{979E5BD4-3D83-43B9-99D8-8ED87A4194F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E54A4AAB-7512-4D85-9AE0-F621F13EEBDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E54A4AAB-7512-4D85-9AE0-F621F13EEBDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E54A4AAB-7512-4D85-9AE0-F621F13EEBDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E54A4AAB-7512-4D85-9AE0-F621F13EEBDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2043D307-5FEC-4095-982C-21D1228C27EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2043D307-5FEC-4095-982C-21D1228C27EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2043D307-5FEC-4095-982C-21D1228C27EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2043D307-5FEC-4095-982C-21D1228C27EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

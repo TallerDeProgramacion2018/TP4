@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EJ03
+namespace EJ04
 {
     public class Usuario : IComparable<Usuario>
     {
