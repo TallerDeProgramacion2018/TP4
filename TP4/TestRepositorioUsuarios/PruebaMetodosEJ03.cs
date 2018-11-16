@@ -5,7 +5,7 @@ using System.Collections.Generic;
 namespace TestRepositorioUsuarios
 {
     [TestClass]
-    public class PruebaMetodos
+    public class PruebaMetodosEJ03
     {
         [TestMethod]
         public void TestAgregar()

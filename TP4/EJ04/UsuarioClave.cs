@@ -21,13 +21,5 @@ namespace EJ04
             get { return iUsuario.Codigo; }
             set { iUsuario.Codigo = value; }
         }
-
-        public override bool Equals(Usuario pUsuario)
-        {
-            if (pUsuario.Codigo == Codigo)
-                return true;
-            else
-                return
-        }
     }
 }

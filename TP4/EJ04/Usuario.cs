@@ -34,5 +34,19 @@ namespace EJ04
         {
             return String.Compare(this.iCodigo, otro.iCodigo);
         }
+
+        public override int GetHashCode()
+        {
+            return Convert.ToInt32(this.Codigo);
+        }
+
+        public override bool Equals(object obj)
+        {
+            var usuario = obj as Usuario;
+            if (obj == null)
+                return false;
+            else
+                return this.Codigo.Equals(usuario.Codigo);
+        }
     }
 }
