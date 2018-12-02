@@ -16,6 +16,9 @@ namespace EJ05
             iAntiguedadMinima = pAntiguedadMinima;
         }
 
+        // Evalúa la edad calculando la diferencia entre el día en cual se llama el método
+        // y el día de ingreso al trabajo, se toma la cantidad de días y se divide entre 30
+        // para conseguir la cantidad de meses de trabajo con un mínimo error.
         public bool EsValida(SolicitudPrestamo pSolicitudPrestamo)
         {
             TimeSpan tiempoTrabajo = DateTime.Today-(pSolicitudPrestamo.Cliente.Empleo.FechaIngreso);

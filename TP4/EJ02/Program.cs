@@ -51,6 +51,7 @@ namespace EJ02
                         Console.WriteLine("Ingrese monto a transferir: ");
                         double monto = Convert.ToDouble(Console.ReadLine());
 
+                        // Estructura try-catch para atrapar alguna excepción de el método de transferencia.
                         try
                         {
                             double disponible =(Fachada.TransferirCajaDeAhorro(monto));
@@ -73,6 +74,7 @@ namespace EJ02
                         Console.WriteLine("Ingrese monto a transferir: ");
                         double monto = Convert.ToDouble(Console.ReadLine());
 
+                        // Estructura try-catch para atrapar alguna excepción de el método de transferencia.
                         try
                         {
                             double disponible = (Fachada.TransferirCuentaCorriente(monto));

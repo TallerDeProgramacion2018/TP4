@@ -8,9 +8,11 @@ namespace EJ05
 {
     public enum TipoCliente
     {
+
         NoCliente,
         Cliente,
         ClienteGold,
         ClientePlatinum
+
     }
 }

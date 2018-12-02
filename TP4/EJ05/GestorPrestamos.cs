@@ -13,6 +13,8 @@ namespace EJ05
 
         public GestorPrestamos()
         {
+            // Se crean y asignan a el diccionario los cuatro tipos de evaluadores compuestos para 
+            // los cuatro tipos de entidades a las que se le permite solicitar un prestamo.
             iEvaluadoresPorCliente = new Dictionary<TipoCliente, IEvaluador>();
             EvaluadorCompuesto evaluadorNoCliente = CrearEvaluadorNoCliente(CrearEvaluadorGenerico());
             iEvaluadoresPorCliente.Add(TipoCliente.NoCliente, evaluadorNoCliente);
@@ -32,6 +34,8 @@ namespace EJ05
             return iEvaluadoresPorCliente[pSolicitud.Cliente.TipoCliente].EsValida(pSolicitud);
         }
 
+        // Método que crea un evaluador genérico, que tiene los evaluadores que
+        // son independientes al tipo de cliente.
         public EvaluadorCompuesto CrearEvaluadorGenerico()
         {
             EvaluadorCompuesto evaluador = new EvaluadorCompuesto();
@@ -48,6 +52,8 @@ namespace EJ05
             return evaluador;
         }
 
+        // En base a un evaluador genérico, se agregan los evaluadores necesarios para
+        // componer un evaluador para una entidad de tipo No Cliente.
         public EvaluadorCompuesto CrearEvaluadorNoCliente(EvaluadorCompuesto pEvaluadorGenerico)
         {
             EvaluadorCantidadCuotas evaluadorCuotas = new EvaluadorCantidadCuotas(12);
@@ -59,6 +65,8 @@ namespace EJ05
             return pEvaluadorGenerico;
         }
 
+        // En base a un evaluador genérico, se agregan los evaluadores necesarios para
+        // componer un evaluador para una entidad de tipo Cliente.
         public EvaluadorCompuesto CrearEvaluadorCliente(EvaluadorCompuesto pEvaluadorGenerico)
         {
             EvaluadorCantidadCuotas evaluadorCuotas = new EvaluadorCantidadCuotas(32);
@@ -70,6 +78,8 @@ namespace EJ05
             return pEvaluadorGenerico;
         }
 
+        // En base a un evaluador genérico, se agregan los evaluadores necesarios para
+        // componer un evaluador para una entidad de tipo Cliente Gold.
         public EvaluadorCompuesto CrearEvaluadorClienteGold(EvaluadorCompuesto pEvaluadorGenerico)
         {
             EvaluadorCantidadCuotas evaluadorCuotas = new EvaluadorCantidadCuotas(60);
@@ -81,6 +91,8 @@ namespace EJ05
             return pEvaluadorGenerico;
         }
 
+        // En base a un evaluador genérico, se agregan los evaluadores necesarios para
+        // componer un evaluador para una entidad de tipo Cliente Platinum.
         public EvaluadorCompuesto CrearEvaluadorClientePlatinum(EvaluadorCompuesto pEvaluadorGenerico)
         {
             EvaluadorCantidadCuotas evaluadorCuotas = new EvaluadorCantidadCuotas(60);
@@ -91,7 +103,6 @@ namespace EJ05
 
             return pEvaluadorGenerico;
         }
-
 
     }
 }

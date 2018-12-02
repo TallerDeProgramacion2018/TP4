@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace EJ04
 {
+    // Clase que contiene la lógica de persistencia de datos, utiliza el patrón repositorio.
+    // A diferencia del ejercicio anterior, se implementa con IList<Usuario>.
     public class RepositorioUsuarios : iRepositorioUsuarios
     {
         private IList<Usuario> iLista = new List<Usuario>();
@@ -96,6 +98,7 @@ namespace EJ04
             return null;
         }
 
+        // Método de distancia de Levenshtein, para realizar una busqueda aproximada.
         public static int Compute(string s, string t)
         {
             int n = s.Length;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EJ01
 {
-    public class DivisorPorCeroException : Exception
+    public class DivisorPorCeroException : Exception  // Definicion de nuestra clase excepción.
     {
         public DivisorPorCeroException()
         {

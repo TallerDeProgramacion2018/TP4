@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace EJ03
 {
+    // Clase usuario que implementa la interfaz IComparable para utilizar el método CompareTo.
     public class Usuario : IComparable<Usuario>
     {
         private string iCodigo;

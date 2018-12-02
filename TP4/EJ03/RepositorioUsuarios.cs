@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace EJ03
 {
+    // Clase que contiene la lógica de persistencia de datos, utiliza el patrón repositorio.
     public class RepositorioUsuarios : iRepositorioUsuarios
     {
         readonly Dictionary<string, Usuario> iDiccionario = new Dictionary<string, Usuario>();

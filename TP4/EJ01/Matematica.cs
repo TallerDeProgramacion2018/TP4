@@ -11,7 +11,7 @@ namespace EJ01
 
         static public double Dividir(int pDividendo, int pDivisor)
         {
-            if (pDivisor == 0)
+            if (pDivisor == 0)  // Especificamos que si el divisor es cero, se dispare la excepción.
             {
                 throw new DivisorPorCeroException();
             }

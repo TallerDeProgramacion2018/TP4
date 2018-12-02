@@ -22,6 +22,7 @@ namespace EJ01
             int divisorConvertido = Convert.ToInt32(divisor);
             Console.WriteLine();
 
+            // Estructura try-catch al hacer la operación de división.
             try
             {
                 double resultado = fachada.Dividir(dividendoConvertido, divisorConvertido);

@@ -17,7 +17,8 @@ namespace EJ05
             iEdadMaxima = pEdadMaxima;
             iEdadMinima = pEdadMinima;
         }
-
+        
+        // Se calcula la edad en días y se evalúa si pertenece al intervalo de edades permitidas.
         public bool EsValida(SolicitudPrestamo pSolicitudPrestamo)
         {
             TimeSpan edad = DateTime.Today.Subtract(pSolicitudPrestamo.Cliente.FechaNacimiento);

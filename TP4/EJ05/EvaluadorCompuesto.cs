@@ -16,6 +16,8 @@ namespace EJ05
 
         }
 
+        // Verifica la validez de cada evaluador del evaluador compuesto
+        // para una solicitud de prestamo.
         public bool EsValida(SolicitudPrestamo pSolicitudPrestamo)
         {
             foreach (IEvaluador evaluador in iEvaluadores)
@@ -31,7 +33,6 @@ namespace EJ05
         {
             iEvaluadores.Add(pEvaluador);
         }
-
 
     }
 }

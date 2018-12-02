@@ -41,8 +41,9 @@ namespace EJ02
             return this.iSaldo;
         }
 
-        public double DebitarSaldo(double pSaldo)                 //Resta un monto que se para como paramentro al saldo actual de
-        {                                                       //la cuenta
+        public double DebitarSaldo(double pSaldo)                 //Resta un monto que se pasa como paramentro al saldo 
+        {                                                         //actual de la cuenta, si esta operación no es posible, 
+                                                                  //se lanza una excepción.
             if (this.iSaldo <= pSaldo)
             {
                 throw new SaldoInsuficienteException();

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace EJ03
 {
+    // Clase que implementa IComparer usada para comparar usuarios por su nombre.
     public class ComparadorPorNombre : IComparer<Usuario>
     {
         public int Compare(Usuario x, Usuario y)

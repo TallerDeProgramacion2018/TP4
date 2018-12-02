@@ -21,7 +21,8 @@ namespace EJ02
             return cuentas.CuentaCorriente.Saldo;
         }
 
-        // En estos métodos se controla si las operaciónes son posibles, y si lo son, se realiza. Devuelve un boolean según cada caso.
+        // Los métodos utilizados lanzan excepciones en casos particulares,
+        // que deberán ser controladas cuando se invoquen en la práctica.
 
         public double TransferirCajaDeAhorro(double pMonto)
         {
